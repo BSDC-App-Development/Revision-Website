@@ -1,136 +1,152 @@
 <!DOCTYPE html>
 <html>
-<!-- BSDC Logo -->
-<img src="logo2.png" class="logobsdc">
-<head>
+    <!--CSS Style Sheet--> 
+    <style>
+      /*Dropdown List Highlight Color On Hover*/
+      .dropdown-content a:hover {
+        background-color: #3e8e41;
+      }
 
-<style>
-</style>
+      /*Dropdown List Hover Selection Style*/
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
 
-<style>
-  .logoexa {
-    image: url("Images/lo");
-    position: fixed;
-    top: 0.05%;
-    left: 0.04;
-  }
-  
-  .logobsdc {
-    position: fixed;
-    top: 0.05%;
-    right: 0.3%;
-  }
-  
-  body {
-    background-image: url("Images/matrix.gif");
-    min-height: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: repeat;
-  }
+      /*Main Dropdown Button Highlight Colour On Hover*/
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
 
-  h1 {
-    font-family: Verdana;
-    color: white;
-    font-size: 32px;
-    text-align: center;
-    font-weight: bold;
-  }
+      /*Dropdown List Link Content Formatting Standard*/
+      .dropdown-content a {
+      color: white;
+      padding: 20px 24px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      }
 
-  h2 {
-    font-family: Verdana;
-    color: white;
-    font-size: 26px;
-    text-align: center;
-    font-weight: bold;
-  }
+      /*Dropdown List Content Formatting Standard*/
+      .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0px;
+      left: 0px;
+      background-color: #04AA6D;
+      min-width: 20px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: Verdana;
+      }
 
-  h3 { 
-    font-family: Verdana;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-  }
-</style>
+      /*Dropdown Base Formatting*/
+      .dropdown {
+      position: absolute;
+      right: 0px;
+      left: 0px;
+      text-align: center;
+      display: inline-block;
+      }
 
-<title>Burton And South Derbyshire College App Development Level 3</title>
+      /*Dropdown Button Formatting*/
+      .dropbtn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 22px;
+      font-size: 20px;
+      border: none;
+      width: 200px;
+      font-family: Verdana;
+      font-size: 24px;
+      font-weight: bold;
+      }
 
-<h1>App Development Level 3 Revision Site</h1>
-<br>
-<br>
-<h2>Project made by Ilja, Dexter, Mark and Alex</h2>
+      /*MADI Logo Formatting*/
+      .logomadi {
+        position: sticky;
+        top: 1px;
+        left: 1px;
+      }
+      
+      /*BSDC Logo Formatting*/
+      .logobsdc {
+        position: fixed;
+        top: 1px;
+        right: 1px;
+      }
+      
+      /*Body Tag Formatting*/
+      body {
+        background-image: url("Images/BackHome.gif");
+        min-height: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: repeat;
+      }
 
-<img src="Images/logoexa.png" class="logoexa" width="8%" height="14%">
-<h3>Welcome to our website. this is a helpful revision tool for anyone studying app/web developmennt at Burton and South Derbyshire College. we hope ths helps!</h3> 
-<style>
+      /*H1 Text Tag Formatting*/
+      h1 {
+        font-family: Verdana;
+        color: white;
+        font-size: 32px;
+        text-align: center;
+        font-weight: bold;
+      }
 
-</style>
+      /*H2 Text Tag Formatting*/
+      h2 {
+        font-family: Verdana;
+        color: white;
+        font-size: 26px;
+        text-align: center;
+        font-weight: bold;
+      }
 
-<br>
-<br>
+      /*H3 Text Tag Formatting*/
+      h3 { 
+        font-family: Verdana;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
 
-<div class="dropdown">
-  <button class="dropbtn">Main Menu</button>
-  <div class="dropdown-content">
-    <a href="GlobalInfo.html">Global Information</a>
-    <a href="#">Fundamentals Of IT</a>
-    <a href="#">About Us</a>
-  </div>
-</div>
+    <!--Header Toolbar-->
+    <head>
+      <div class="topnav">
+        <a href="AboutUs.html">
+          <div class="logo-image">
+            <!--MADI Logo Image-->
+            <img src="Images/LogoMADI.png" class="logomadi" width="150" height="150">
+          </div>
+        </a>
+        <a class="active" href="index.html">
+          <!--BSDC Logo Image-->
+          <img src="Images/CollegeLogo.png" class="logobsdc">
+        </a>
+      </div>
+      <title>Burton And South Derbyshire College App Development Level 3</title>
+    </head>
 
-<style>
-.dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 22px;
-  font-size: 20px;
-  border: none;
-  width: 200px;
-  font-family: Verdan;
-  font-size: 24px;
-  font-weight: bold;
-  
-}
+  <!--Main Body-->
+  <body>
+      <h1>App Development Level 3 Revision Site</h1>
+        <br>
+        <br>
+      <h2>Project Made By Ilja, Dexter, Mark And Alex</h2>
+      <h3>Welcome To Our Website. This Is A Helpful Revision Tool For Anyone Studying Global Information Or Fundamentals Of IT For App/Web Development. We Hope This Helps!</h3> 
+        <br>
+        <br>
 
-.dropdown {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  text-align: center;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  background-color: #04AA6D;
-  min-width: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  font-color: white;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: Verdana;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 20px 24px;
-  text-color: white;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-</style>
-
-</head>
-<body>
+    <div class="dropdown">
+      <button class="dropbtn">Main Menu</button>
+      <div class="dropdown-content">
+        <a href="GlobalInfomation.html">Global Information</a>
+        <a href="#">Fundamentals Of IT</a>
+      </div>
+    </div>
+  </body>
+</html>

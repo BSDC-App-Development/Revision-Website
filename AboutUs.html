@@ -8,6 +8,69 @@
             justify-content: space-between;
         }
 
+        /*Dropdown List Highlight Color On Hover*/
+        .dropdown-content a:hover {
+            background-color: #3e8e41;
+        }
+
+        /*Dropdown List Hover Selection Style*/
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /*Main Dropdown Button Highlight Colour On Hover*/
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        /*Dropdown List Link Content Formatting Standard*/
+        .dropdown-content a {
+        color: white;
+        padding: 20px 24px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        }
+
+        /*Dropdown List Content Formatting Standard*/
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        background-color: #04AA6D;
+        min-width: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Verdana;
+        text-shadow: 2px 2px black;
+        }
+
+        /*Dropdown Base Formatting*/
+        .dropdown {
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        text-align: center;
+        display: inline-block;
+        }
+
+        /*Dropdown Button Formatting*/
+        .dropbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 22px;
+        font-size: 20px;
+        border: none;
+        width: 200px;
+        font-family: Verdana;
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 2px 2px black;
+        }
+
         /*BSDC Logo Formatting*/
         .logobsdc {
             position: sticky;
@@ -38,6 +101,7 @@
             font-size: 32px;
             text-align: center;
             font-weight: bold;
+            text-shadow: 2px 2px black;
         }
 
         /*H2 Text Tag Formatting*/
@@ -45,8 +109,9 @@
             font-family: Verdana;
             color: white;
             font-size: 26px;
-            text-align: center;
+            text-align: left;
             font-weight: bold;
+            text-shadow: 2px 2px black;
         }
 
         /*H3 Text Tag Formatting*/
@@ -56,6 +121,7 @@
             font-size: 20px;
             text-align: center;
             font-weight: bold;
+            text-shadow: 2px 2px black;
         }
     </style>
     <!--Header Toolbar-->
@@ -67,6 +133,41 @@
                 <img src="Images/LogoMADI.png" class="logomadi" width="150" height="150">
               </div>
             </a>
+            <div class="dropdown">
+                <button class="dropbtn">Global Information</button>
+                <div class="dropdown-content">
+                    <a href="GlobalInformation/AccessAndStorageDevices.html">Access And Storage Devices</a>
+                    <a href="GlobalInformation/DataVsInformation.html">Data Vs Information</a>
+                    <a href="GlobalInformation/HoldersOfInformation.html">Holders Of Information</a>
+                    <a href="GlobalInformation/InformationCategories.html">Information Categories</a>
+                    <a href="GlobalInformation/InformationClassifications.html">Information Classifications</a>
+                    <a href="GlobalInformation/InformationFormats.html">Information Formats</a>
+                    <a href="GlobalInformation/InformationManagement.html">Information Management</a>
+                    <a href="GlobalInformation/InformationStyles.html">Information Styles</a>
+                    <a href="GlobalInformation/InternetConnections.html">Internet Connections</a>
+                    <a href="GlobalInformation/InternetProsAndCons.html">Internet Pros And Cons</a>
+                    <a href="GlobalInformation/QualityOfInformation.html">Quality Of Information</a>
+                    <a href="GlobalInformation/StagesOfDataAnalysis.html">Stages Of Data Analysis</a>
+                    <a href="GlobalInformation/StorageMedia.html">Storage Media</a>
+                    <a href="GlobalInformation/WWWTechnologies.html">WWW Technologies</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <div class="dropdown-content">
+                        <a href="FundamentalsOfIT/CommunicationHardware.html">Communication Hardware</a>
+                        <a href="FundamentalsOfIT/Connectivity.html">Connectivity</a>
+                        <a href="FundamentalsOfIT/Hardware.html">Hardware</a>
+                        <a href="FundamentalsOfIT/NetworkCharacteristics.html">Network Characteristics</a>
+                        <a href="FundamentalsOfIT/NumberSystemsAndConversions.html">Number Systems And Conversions</a>
+                        <a href="FundamentalsOfIT/Protocols.html">Protocols</a>
+                        <a href="FundamentalsOfIT/ServerTypes.html">Server Types</a>
+                        <a href="FundamentalsOfIT/TypesOfComputer.html">Types Of Computer</a>
+                        <a href="FundamentalsOfIT/TypesOfSoftware.html">Types Of Software</a>
+                        <a href="FundamentalsOfIT/UnitsOfMeasurement.html">Units Of Measurement</a>
+                    </div>
+                </button>
+            </div>
             <a class="active" href="index.html">
               <div class="logo-image">
                 <!--BSDC Logo Image-->
@@ -78,6 +179,19 @@
     </head>
     <!--Main Body-->
     <body>
-        <h1>Hello World</h1>
+        <h1>About Us</h1>
+        <br>
+        <h2>Dexter</h2>
+        <br>
+        <h3>Test Description</h3>
+        <h2>Ilja</h2>
+        <br>
+        <h3>Test Description</h3>
+        <h2>Mark</h2>
+        <br>
+        <h3>Test Description</h3>
+        <h2>Alex</h2>
+        <br>
+        <h3>Test Description</h3>
     </body>
 </html>
